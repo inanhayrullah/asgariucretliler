@@ -1,0 +1,4 @@
+import {notFound} from "next/navigation";import {Footer,AdSlot} from "@/components/site";import {Header} from "@/components/header";import {ReflexGame} from "@/components/interactions";import type {Metadata} from "next";
+export const metadata:Metadata={title:"Refleks oyunu",description:"15 saniyelik dokunma oyunu."};
+export function generateStaticParams(){return [{slug:"refleks"}]}
+export default async function Game({params}:{params:Promise<{slug:string}>}){const {slug}=await params;if(slug!=="refleks")notFound();return <><Header/><main className="wrap"><header className="pagehead"><span className="eyebrow">MİNİ OYUN</span><h1>Refleks molası</h1><p>15 saniye içinde hedefe olabildiğince çok dokun. Kişisel rekor cihazında saklanır.</p></header><ReflexGame/><div className="homead"><AdSlot label="Oyun alanından ayrı reklam alanı"/></div></main><Footer/></>}

@@ -1,0 +1,3 @@
+import {Footer} from "@/components/site";import {Header} from "@/components/header";import type {Metadata} from "next";
+export const metadata:Metadata={title:"İletişim",description:"Mesai yayın ekibiyle iletişim."};
+export default function Contact(){return <><Header/><main className="wrap"><header className="pagehead"><span className="eyebrow">İLETİŞİM</span><h1>Bize ulaşın</h1><p>Görüş, düzeltme ve iş birliği talepleri için iletişim kanalı henüz yapılandırılmadı.</p></header><div className="notice">Yayın e-posta adresi alan adı ve posta kutusu belirlendikten sonra yapılandırılacaktır.</div></main><Footer/></>}

@@ -1,0 +1,3 @@
+import {Footer} from "@/components/site";import {Header} from "@/components/header";import type {Metadata} from "next";
+export const metadata:Metadata={title:"Çerezler",description:"Çerez ve yerel depolama bilgilendirmesi."};
+export default function Cookies(){return <><Header/><main className="wrap"><header className="pagehead"><span className="eyebrow">ÇEREZLER</span><h1>Çerezler ve yerel depolama</h1></header><section className="legalcopy"><p>Demo oyunu kişisel rekoru tarayıcıdaki localStorage alanına yazar. Reklam, analitik veya zorunlu olmayan takip kodu bu sürümde yüklenmez.</p><p>Gerçek reklam/analitik entegrasyonu öncesinde rıza yönetimi ve uygun politika metinleri eklenmelidir.</p></section></main><Footer/></>}

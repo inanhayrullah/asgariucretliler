@@ -1,0 +1,11 @@
+d: asgariucretlilercom sağ tık code ile aç
+
+vscode ctrl j ile terminal aç
+
+herhangi bir dosya açığ sağ üstten chat gpt iconuna tıkla
+
+projeyi ayağa kaldırmak için: 
+
+npm.cmd run dev
+
+vscode codex eklentisinde kullanacağım detaylı bir prompt/prd çıkar

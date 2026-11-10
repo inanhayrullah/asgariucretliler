@@ -1,0 +1,2 @@
+import Link from "next/link";import {Footer} from "@/components/site";import {Header} from "@/components/header";
+export default function NotFound(){return <><Header/><main className="wrap"><header className="pagehead"><span className="eyebrow">404</span><h1>Bu sayfayı bulamadık.</h1><p>Adres değişmiş veya içerik kaldırılmış olabilir.</p><Link className="cta" href="/">Ana sayfaya dön</Link></header></main><Footer/></>}
